@@ -6,8 +6,11 @@ def main():
     show_header()
     event_loop()
     
+def start_game():
+    decision= input('Would you like to start timer now?<Yes or No>').lower()
+    
 def event_loop():
-    answer= input('Would you like to start timer now?<Yes or No>').lower()
+    answer= start_game()
     count= 1
  
     
