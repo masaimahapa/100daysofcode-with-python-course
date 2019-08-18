@@ -8,6 +8,10 @@ def main():
     
 def start_game():
     decision= input('Would you like to start timer now?<Yes or No>').lower()
+    if decision !='yes' or decision!= 'no':
+        print('input should be either yes, or no.')
+        start_game()
+    return decision
     
 def event_loop():
     answer= start_game()
